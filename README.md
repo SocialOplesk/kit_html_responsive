@@ -5,7 +5,7 @@
 ## ⚡️ Kit media query⚡️
 <br/> 
 
-## 🏆 K-1 (CREAR CUENTA LOCAL)
+## 🏆 K-2 (MEDIA QUERY)
 
 Media query 
 ```
@@ -15,6 +15,63 @@ Media query
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            background-color: #3498db; /* Azul por defecto */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            font-size: 16px;
+        }
+
+        /* Única Media Query: max-width (pantallas hasta 600px) */
+        @media screen and (max-width: 600px) {
+            .box {
+                background-color: #e74c3c; /* Rojo */
+                font-size: 14px;
+                border-radius: 0; /* Bordes rectos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>¡Prueba de Media Query!</h1>
+        <p>Redimensiona la ventana para ver los cambios.</p>
+    </div>
+</body>
+</html>
+```
+
+
+## 🏆 K-2 (MEDIA QUERIES)
+
+Media query 
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-2</title>
     <style>
         * {
             margin: 0;
@@ -78,3 +135,62 @@ Media query
 </body>
 </html>
 ```
+
+## 🏆 K-3 (MAX AND MIN)
+
+Media query 
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            background-color: #3498db; /* Azul por defecto */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            font-size: 16px;
+        }
+
+        /* Única Media Query: min-width y max-width combinados con AND */
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            .box {
+                background-color: #f39c12; /* Naranja */
+                border: 2px dashed #fff;
+                font-style: italic;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>¡Prueba de Media Query!</h1>
+        <p>Redimensiona la ventana para ver los cambios.</p>
+    </div>
+</body>
+</html>
+```
+
+
+
